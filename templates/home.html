@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+
+
+    <style>
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
+        }
+        .panel {
+            padding: 30px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            background-color: #f9f9f9;
+        }
+        .panel-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .gallery-item {
+            margin: 10px;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">WSitarek</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="section">
+    <div class="container">
+        <h2 class="section-title">Cześć!</h2>
+        <div class="panel">
+            <h3>Wstęp</h3>
+            <p class="section-content">
+
+                "Zapraszam do mojego portfolio! Jestem ambitnym studentem informatyki o silnych umiejętnościach w programowaniu backendowym.
+                Moje pasje i zainteresowania skupiają się głównie wokół projektowania i implementacji rozwiązań backendowych,
+                które napędzają aplikacje internetowe i serwisy internetowe."
+</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About me</h2>
+        <div class="panel">
+            <img src="https://via.placeholder.com/100" alt="User" class="panel-img">
+            <h3>Your Name</h3>
+            <p class="section-content">Witaj na moim portfolio! Jestem entuzjastą technologii z pasją do programowania i tworzenia innowacyjnych rozwiązań. Moje imię to [Twoje imię], jestem studentem informatyki z zamiłowaniem do backendowego programowania. Moje kreatywne podejście do rozwiązywania problemów, połączone z solidną wiedzą teoretyczną i praktycznym doświadczeniem, pozwala mi rozwijać zaawansowane aplikacje internetowe.
+
+Jestem zdeterminowany, aby stale poszerzać moje umiejętności i zdobywać nowe doświadczenia w świecie technologii. Moje portfolio zawiera projekty, które odzwierciedlają moje zainteresowania i osiągnięcia w dziedzinie backendowego programowania. Oprócz pracy nad projektami programistycznymi, interesuję się również rozwojem osobistym oraz udziałem w społecznościach programistycznych, gdzie mogę dzielić się wiedzą i doświadczeniem.
+
+Zapraszam do zgłębienia mojego portfolio, aby poznać moje umiejętności, projekty i pasje bliżej!</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section">
+    <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400" alt="Image 1">
+                <p class="section-content">Description for Image 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400" alt="Image 2">
+                <p class="section-content">Description for Image 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400" alt="Image 3">
+                <p class="section-content">Description for Image 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/400" alt="Image 4">
+                <p class="section-content">Description for Image 4</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="panel">
+            <h3>Contact Information</h3>
+            <p class="section-content">You can contact us via email or follow us on social media:</p>
+            <ul class="list-unstyled">
+                <li><i class="fa fa-envelope"></i> Email: contact@example.com</li>
+                <li><i class="fa fa-phone"></i> Phone: +1234567890</li>
+            </ul>
+            <div>
+                <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 WSitarek. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
