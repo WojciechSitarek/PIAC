@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'PortfolioWSB'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9A16CD4B0C2A4A4388B6F842AF7569F0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B663A00BF1A343E89CB4F050C7007E7C }}
